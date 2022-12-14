@@ -133,7 +133,7 @@
           <h2 class="contact-title">Get in Touch</h2>
         </div>
         <div class="col-lg-8">
-          <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+          <form class="form-contact contact_form" onsubmit="sendEmail(); reset(); return false;">
             <div class="row">
               <div class="col-12">
                 <div class="form-group">
@@ -256,6 +256,27 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
   </div>
 </footer>
 <!-- footer part end-->
+        
+<!-- contact form smtpjs-->
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+function sendEmail(){
+Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "samuelpasaribu3342@gmail.com",
+    Password : "F83F001ED5613FB7E50D39D00BE93901C49D",
+    To : 'zoneamedia@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "New Contact Form Enquiry",
+    Body : "Name: " + document.getElementById("name").value
+        + "<br> Email: " + document.getElementById("email").value
+        + "<br> Phone no: " + document.getElementById("phone").value
+        + "<br> Message: " + document.getElementById("message").value
+}).then(
+  message => alert("Message Sent Succesfully")
+);
+}
+</script>        
 
 <!-- jquery plugins here-->
 <!-- jquery -->
