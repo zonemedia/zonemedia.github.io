@@ -25,57 +25,6 @@
         <link href="https://zonemedia.github.io/" rel="canonical"/>
         <link rel="preconnect" href="https://www.google-analytics.com" crossorigin/>
         <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin/>
-        <link rel="preconnect" href="https://az416426.vo.msecnd.net" crossorigin/>
-        <script type="text/javascript">
-            var appInsights = window.appInsights || function(a) {
-                function b(a) {
-                    c[a] = function() {
-                        var b = arguments;
-                        c.queue.push(function() {
-                            c[a].apply(c, b)
-                        })
-                    }
-                }
-                var c = {
-                    config: a
-                }
-                  , d = document
-                  , e = window;
-                setTimeout(function() {
-                    var b = d.createElement("script");
-                    b.src = a.url || "https://az416426.vo.msecnd.net/scripts/a/ai.0.js",
-                    d.getElementsByTagName("script")[0].parentNode.appendChild(b)
-                });
-                try {
-                    c.cookie = d.cookie
-                } catch (a) {}
-                c.queue = [];
-                for (var f = ["Event", "Exception", "Metric", "PageView", "Trace", "Dependency"]; f.length; )
-                    b("track" + f.pop());
-                if (b("setAuthenticatedUserContext"),
-                b("clearAuthenticatedUserContext"),
-                b("startTrackEvent"),
-                b("stopTrackEvent"),
-                b("startTrackPage"),
-                b("stopTrackPage"),
-                b("flush"),
-                !a.disableExceptionTracking) {
-                    f = "onerror",
-                    b("_" + f);
-                    var g = e[f];
-                    e[f] = function(a, b, d, e, h) {
-                        var i = g && g(a, b, d, e, h);
-                        return !0 !== i && c["_" + f](a, b, d, e, h),
-                        i
-                    }
-                }
-                return c
-            }({
-                instrumentationKey: "4d3e696b-b2fb-4237-99dc-c8e0829fdd81"
-            });
-            window.appInsights = appInsights,
-            appInsights.queue && 0 === appInsights.queue.length && appInsights.trackPageView();
-        </script>
         <!-- Google Tag Manager -->
         <script>
             (function(w, d, s, l, i) {
@@ -113,54 +62,6 @@
     
         </script>
         <link rel="stylesheet" href="/public/v-638041281440000000/index.css"/>
-        <script type="text/javascript">
-            var appInsights = window.appInsights || function(config) {
-                function t(config) {
-                    i[config] = function() {
-                        var t = arguments;
-                        i.queue.push(function() {
-                            i[config].apply(i, t)
-                        })
-                    }
-                }
-                var i = {
-                    config: config
-                }, u = document, e = window, o = "script", s = "AuthenticatedUserContext", h = "start", c = "stop", l = "Track", a = l + "Event", v = l + "Page", r, f;
-                setTimeout(function() {
-                    var t = u.createElement(o);
-                    t.src = config.url || "https://az416426.vo.msecnd.net/scripts/a/ai.0.js";
-                    u.getElementsByTagName(o)[0].parentNode.appendChild(t)
-                });
-                try {
-                    i.cookie = u.cookie
-                } catch (y) {}
-                for (i.queue = [],
-                r = ["Event", "Exception", "Metric", "PageView", "Trace", "Dependency"]; r.length; )
-                    t("track" + r.pop());
-                return t("set" + s),
-                t("clear" + s),
-                t(h + a),
-                t(c + a),
-                t(h + v),
-                t(c + v),
-                t("flush"),
-                config.disableExceptionTracking || (r = "onerror",
-                t("_" + r),
-                f = e[r],
-                e[r] = function(config, t, u, e, o) {
-                    var s = f && f(config, t, u, e, o);
-                    return s !== !0 && i["_" + r](config, t, u, e, o),
-                    s
-                }
-                ),
-                i
-            }({
-                instrumentationKey: "4d3e696b-b2fb-4237-99dc-c8e0829fdd81",
-                sdkExtension: "a"
-            });
-            window.appInsights = appInsights;
-            appInsights.queue && appInsights.queue.length === 0 && appInsights.trackPageView();
-        </script>
     </head>
     <body id="body-facelift" class=" ">
         <input id="drawer-toggle" name="drawer-toggle" type="checkbox"/>
