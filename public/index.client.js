@@ -3235,7 +3235,7 @@
             x && function() {
                 var e = x.getAttribute("data-page-id")
                   , t = x.getAttribute("data-page-language");
-                T.a.post("/api/tracking/track-page-view.html", {
+                T.a.post("/api/tracking/track-page-view", {
                     event: event,
                     pageUrl: window.location.href,
                     pageId: e,
