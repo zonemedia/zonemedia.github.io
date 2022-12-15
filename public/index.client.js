@@ -1091,7 +1091,7 @@
                         var t = this,
                             a = e.coords.latitude,
                             r = e.coords.longitude;
-                        b.a.post("/api/locations/coordinates", {
+                        b.a.post("https://www.samuel.com/api/locations/coordinates", {
                             coordinates: {
                                 latitude: a,
                                 longitude: r
