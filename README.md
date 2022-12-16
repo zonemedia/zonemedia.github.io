@@ -1,7 +1,7 @@
-# Zonemedia.github.io
+# Zonemedia - Technology enthusiast
 Zonemedia is one of the best digital marketing agency, ROI oriented Digital marketing solution
 <br />
-## Folder
+## zonemedia.github.io
 C:\xampp\htdocs>zonemedia.github.io
 <br />
 <br />
