@@ -14,6 +14,7 @@
 
 [![Statistik zonemedia](https://github-readme-stats.vercel.app/api?username=zonemedia&theme=github_dark&hide=contribs,commits&show_icons=true&custom_title=Statistik%20zonemedia)](https://github.com/zonemedia)
 <p><b>Zonemedia is</b> one of the best digital marketing agency, ROI oriented Digital marketing solution</p>
+<a href="https://zoneamedia.blogspot.com"><img src="https://camo.githubusercontent.com/90808661433696bc57dce8d4ad732307b5cec6270e6b846f114dcd7ee7f9458a/68747470733a2f2f636f646573616e64626f782e696f2f7374617469632f696d672f706c61792d636f646573616e64626f782e737667" alt="blog-element-plus" data-canonical-src="https://codesandbox.io/static/img/play-codesandbox.svg" style="max-width: 100%;"></a>
 <h2>Zonemedia.github.io</h2>
 <p><a href="https://zoneamedia.blogspot.com">Zoneamedia</a> is the ultimate authority on optimizing every aspect of your life. Do everything better</p>
 <h3>Localhost</h3>
