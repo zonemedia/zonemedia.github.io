@@ -1,0 +1,213 @@
+<html class="notranslate" lang="en" translate="no"><head>
+    <meta charset="UTF-8">
+    <meta name="google" content="notranslate">
+    <title>Zonemedia | Global Deface Script Archive</title>
+    <meta name="description" content="Sub Kode: Html, Css, JavaScript, Python, dll">
+    <meta property="og:title" content="PusatFilm - Global Deface Script Archive">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="https://zonemedia.github.io">
+    <meta property="og:description" content="Script Deface: HTML, CSS, JavaScript, Python, dll">
+    <meta property="og:image" content="https://bit.ly/3OYAU2H">
+    <link rel="icon" type="image/png" href="https://zonemedia.github.io/favicon.ico" />
+    </head>
+    <body style="font-family: Helvetica, Arial, sans-serif;">
+    
+    <style>
+    body{
+    background:#161616;
+    }
+    h3, h2, h1{
+    margin-block-start:0.5em;
+    margin-block-end:0.5em;
+    }
+    .scroll{
+    width: 100%;
+    overflow-y: auto;
+    padding: 5px 0px 0px 0px;
+    }
+    .a1{
+    text-align:center;
+    max-width:26px;
+    }
+    .a2{
+    max-width:20px;
+    padding: 0px 10px 0px 10px;
+    }
+    .a3{
+    font-weight:bold;
+    font-size:18px;
+    }
+    .a4{
+    font-size:16px;
+    }
+    a{
+        color: #dfcc55;
+        text-decoration: none;
+        background-color: transparent;
+    }
+    a:hover{
+    color:#e7ff00;
+    text-decoration:revert;
+    }
+    td.a4 a {
+    color: #bee5ff!important;
+    }
+    td.a4 a:hover{
+    color:#3da0ff!important;
+    }
+    thead td {
+    font-weight: bold;
+    color: #aea9ae!important;
+    
+    }
+    td{
+    border: 1px solid #dee2e6;
+    padding: 0.6rem 0.4rem 0.6rem;
+    max-width: 600px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: lightgrey;
+    }
+    th{
+    border: 1px solid #dee2e6;
+    padding: 0.4rem;
+    max-width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    }
+    th,h2,p{
+    color:lightgrey;
+    }
+    table{
+    border: 6px solid #983abb;
+    border-collapse:collapse;
+    width:95%;
+    max-width:650px;
+    }
+    table tr:nth-child(even){
+    background-color: #2a324a;
+    }
+    .scrollingTable {
+    width: 100%;
+    overflow-y: auto;
+    padding:5px 0px 0px 0px;
+    }
+    .cari-media {
+    width:40%;
+    min-width:250px;
+    max-width:500px;
+    padding:0.2em 2.2em;
+    border:3px solid rgb(139 139 139 / 60%);
+    border-radius:100px;
+    background-color:#242469;
+    font-size:17px;
+    color:#69ff5c;
+    background-repeat:no-repeat;
+    background-position:10px 2px;
+    background-image:url('data:image/svg+xml,<svg fill="darkgray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M11 2c4.968 0 9 4.032 9 9s-4.032 9-9 9-9-4.032-9-9 4.032-9 9-9zm0 16c3.867 0 7-3.133 7-7 0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7zm8.485.071l2.829 2.828-1.415 1.415-2.828-2.829 1.414-1.414z"/></svg>');
+    }
+    .npm {
+        border-radius: 6px;
+        border: solid 5px #204ecf;
+        cursor: pointer;
+        background-color: #204ecf;
+    }
+    .npm:hover{
+    background-color:#7499ff;
+    border: solid 5px #7499ff;
+    }
+    
+    .media {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+    }
+    .zone{
+    background-image: url('data:image/svg+xml,<svg fill="white" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"></path><path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"></path></svg>');
+    background-repeat:no-repeat;
+    background-size:cover;
+    }
+    .zonemedia-github-io{
+        /* background: linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%); */
+        background: linear-gradient(330deg, #ff0000 0%, #31e400 25%, #00f7ff 50%, #7f00ff 75%, #ff0000 100%);
+        background-size: 200% auto;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: animate 1.5s linear infinite; 
+        }
+    @keyframes animate{
+          to {
+            background-position: 200% center;
+          }
+        }
+    </style>
+    
+    <center>
+    <h1 class="zonemedia-github-io">Global Deface Script Archive</h1>
+    <h2>Script Deface Html Zonemedia</h2>
+    <h3 style="color: white;">Script Deface Repositories</h3>
+    <hr>
+    
+    <input id="myInput" class="cari-media" onkeyup="searchTable()" type="text" placeholder="Search">
+    
+    <div class="scroll">
+    <table id="myTable">
+    <thead>
+    <tr>
+    <td width="20px">NO</td>
+    <td>Name</td>
+    <td width="20px">Code</td>
+    <td>File</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td class="a1">1</td>
+    <td class="a3"><a href="https://zonemedia.github.io/deface/deface1.html">The Botwa</a></td>
+    <td class="a2"><a target="_blank" href="https://gist.github.com/Samuelpasaribu/1d3049b457b542892102654b0d82de5b"><i class="npm zone media"></i></a></td>
+    <td class="a4"><a href="https://zonemedia.github.io/deface/deface1.html">deface1.html</a></td>
+    </tr>
+    
+    <tr>
+    <td class="a1">2</td>
+    <td class="a3"><a href="https://okemedia.web.app/status/indonesia.html">Indonesia</a></td>
+    <td class="a2"><a target="_blank" href="https://gist.github.com/Samuelpasaribu/59092eedaf37dd879c7b1c033253fe38"><i class="npm zone media"></i></a></td>
+    <td class="a4"><a href="https://okemedia.web.app/status/indonesia.html">indonesia.html</a></td>
+    </tr>
+    
+    <tr>
+    <td class="a1">3</td>
+    <td class="a3"><a href="https://okemedia.web.app/status/info.html">Info</a></td>
+    <td class="a2"><a target="_blank" href="https://gist.github.com/Samuelpasaribu/6c25d2ff36e82101cac951919d7db018"><i class="npm zone media"></i></a></td>
+    <td class="a4"><a href="https://okemedia.web.app/status/info.html">info.html</a></td>
+    </tr>
+    
+    <tr>
+    <td class="a1">4</td>
+    <td class="a3"><a href="https://okemedia.web.app/status/game.html">Game</a></td>
+    <td class="a2"><a target="_blank" href="https://gist.github.com/Samuelpasaribu/ff528af0bbf3ef1f81ec17cf4e536a34"><i class="npm zone media"></i></a></td>
+    <td class="a4"><a href="https://okemedia.web.app/status/game.html">game.html</a></td>
+    </tr>
+    
+    <tr>
+    <td class="a1">5</td>
+    <td class="a3"><a href="http://okemedia.web.app/status/profil.html">Profil</a></td>
+    <td class="a2"><a target="_blank" href="https://gist.github.com/Samuelpasaribu/2a31a7d5cbd47ca641b4e99b2b85b3c8"><i class="npm zone media"></i></a></td>
+    <td class="a4"><a href="http://okemedia.web.app/status/profil.html">profil.html</a></td>
+    </tr>
+    
+    <tr>
+    <td class="a1">6</td>
+    <td class="a3"><a href="http://okemedia.web.app/mp3/index.html">Mp3</a></td>
+    <td class="a2"><a target="_blank" href="https://okemedia.web.app/mp3/index.html"><i class="npm zone media"></i></a></td>
+    <td class="a4"><a href="http://okemedia.web.app/mp3/index.html">mp3.html</a></td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    <hr>
+    <p style="text-align: center;color: white;">© 2022 <a href="https://zoneamedia.blogspot.com" class="zonemedia-github-io" style="font-size:medium;">zonemedia.github.io</a> All Rights Reserved</p>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/zonemedia/deface/deface.js"></script>
+    </body></html>
