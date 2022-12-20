@@ -43,14 +43,14 @@
 <p>C:\xampp\htdocs>zonemedia.github.io/<a href="https://zonemedia.github.io/deface">deface</a></p>
 📁 deface
 <br />
-📄 <a href="https://github.com/zonemedia/zonemedia.github.io/tree/master/deface/deface1.html">deface1.html</a>
+📄 deface1.html
 <br />
-📄 <a href="https://github.com/zonemedia/zonemedia.github.io/tree/master/deface/deface2.html">deface2.html</a>
+📄 deface2.html
 <br />
-📄 <a href="https://github.com/zonemedia/zonemedia.github.io/tree/master/deface/deface3.html">deface3.html</a>
+📄 deface3.html
 <br />
-📄 <a href="https://github.com/zonemedia/zonemedia.github.io/tree/master/deface/deface4.html">deface4.html</a>
+📄 deface4.html
 <br />
-📄 <a href="https://github.com/zonemedia/zonemedia.github.io/tree/master/deface/deface5.html">deface5.html</a>
+📄 deface5.html
 <br />
 📄 <a href="https://github.com/zonemedia/zonemedia.github.io/tree/master/deface/index.html">index.html</a>
