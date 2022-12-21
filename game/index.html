@@ -1,297 +1,145 @@
-<!--  •°• Zonemedia | Game •°•  --> 
-
-<!--
-°• Gw cuma bisa buat sc nya doang, klo ngedepes masih nub bwangg 
-°• Nih pake sc depes gw yg dulu pernah gw pake tebas index web nasa :D
-°• Lu pake nih sc, dijamin auto minder para mastah 
-°• Tapi kalo mau pake/recode, izin dulu bwangg :)
-°• Jika mau request sc, bilang saya ya, insya Allah. saya bisa membantu
-°• Insipirasi warna by colorhunt.co 
--->
-
-<!-- Version 10 -->
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="[ L13F.R ]">
+<html lang="id">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Game - Zonemedia</title>
+        <link rel="stylesheet" href="./data/css/default.css"/>
+        <link rel="stylesheet" href="./data/helper/popup/popup.css"/>
+        <link rel="stylesheet" href="./data/css/styles.css"/>
+    </head>
+    <body>
+        <header>
+            <h1 class="title">
+                <img src="./data/img/zonemedia.github.io.png" width="45" alt="Kirimin Logo"/>
+                <span>ZONEMEDIA</span>
+            </h1>
+            <div class="menu">
+                <a href="https://zoneamedia.blogspot.com" class="library">BLOG</a>
+                <a href="https://myidchat.web.app" class="login">LOGIN</a>
+            </div>
+        </header>
+        <main>
+            <article class="title-screen">
+                <div class="hero">
+                    <img width="125" src="./data/img/zonemedia.png" alt="game-zonemedia">
+                    <div class="spinning">
+                        <i class="fa-duotone fa-microphone-lines"></i>
+                        <i class="fa-duotone fa-paper-plane"></i>
+                        <i class="fa-duotone fa-camera-retro"></i>
+                        <i class="fa-duotone fa-comments"></i>
+                        <i class="fa-duotone fa-bug"></i>
+                        <i class="fa-duotone fa-file"></i>
+                        <i class="fa-duotone fa-earth-asia"></i>
+                        <i class="fa-duotone fa-robot"></i>
+                    </div>
+                </div>
+                <div class="description">
+                    <h1>Game Zonemedia</h1>
+                    <p>
+                        Anda bisa langsung memainkan game yang anda sukai tanpa iklan dan tanpa perlu mengunduh. Cukup klik salah satu game untuk mulai memainkannya, Gratis!
+                    </p>
+                    <a class="login" href="#tools">Repositories</a>
+                </div>
+                <footer class="wave">
+                    <img src="./data/img/wave.svg" alt="aaa">
+                </footer>
+            </article>
+            <article class="content" id="tools">
+                <h1 class="content-title">POPULAR GAMES</h1>
+                <div class="main-content">
+                    <div class="banner fapro"></div>
+                    <div class="description">
+                        <h1>Millionaire Game</h1>
+                        <p>Millionaire Game Play Free</p>
+                        <a href="https://devanka761.github.io/font-awesome-pro/" target="_blank">Buka</a>
+                    </div>
+                    <span>cracked by Samuel</span>
+                </div>
+                <div class="main-content right">
+                    <div class="description">
+                        <h1>Play Along Drums</h1>
+                        <p>Learn to play drums</p>
+                        <a href="https://firebase.google.com/" target="_blank">Buka</a>
+                    </div>
+                    <div class="banner firebase"></div>
+                    <span>by Samuel</span>
+                </div>
+                <div class="main-content">
+                    <div class="banner notipin"></div>
+                    <div class="description">
+                        <h1>Typing Game JS</h1>
+                        <p>Easy, Medium or Hard</p>
+                        <a href="http://github.com/devanka761/notipin" target="_blank">Buka</a>
+                    </div>
+                    <span>made by Samuel</span>
+                </div>
+                <div class="main-content right">
+                    <div class="description">
+                        <h1>Ping Pong</h1>
+                        <p>Pong is a table tennis</p>
+                        <a>Buka</a>
+                    </div>
+                    <div class="banner kontrolin"></div>
+                    <span>made by Samuel</span>
+                </div>
+            </article>
+            <footer id="footer">
+                <a target="_blank" href="https://github.com/zonemedia">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a target="_blank" href="https://zonemedia.github.io/music">
+                    <i class="fa-brands fa-spotify"></i>
+                    <span>Music</span>
+                </a>
+                <a target="_blank" href="https://zonemedia.github.io/deface">
+                    <i class="fa-brands fa-youtube"></i>
+                    <span>Youtube</span>
+                </a>
+                <a target="_blank" href="https://www.samuelpasaribu.com/">
+                    <i class="fa-brands fa-blogger-b"></i>
+                    <span>Blog Site</span>
+                </a>
+                <a target="_blank" href="https://chatkoding.web.app/">
+                    <i class="fa-regular fa-envelope"></i>
+                    <span>Mail</span>
+                </a>
+            </footer>
+        </main>
+        <script src="./data/helper/popup/popup.js"></script>
+        <script>
 
-	<!-- Title -->
-	<title>Game - Zonemedia</title>
+            const main = document.querySelector('main');
+            const header = document.querySelector('header');
+            let scrolledDown = false;
+            main.addEventListener('scroll', function() {
+                if (!header.classList.contains('scrolled')) {
+                    header.classList.add('scrolled')
+                }
+                if (main.scrollTop == 0 && header.classList.contains('scrolled')) {
+                    header.classList.remove('scrolled');
+                }
+                if (main.scrollTop >= main.clientHeight / 2 && scrolledDown === false) {
+                    popup.confirm({
+                        msg: 'Apa Kamu Seorang Programmer?<br/>atau suka dengan hal yang berbau programming?',
+                        yes: 'Iya, Betul',
+                        no: 'Tidak',
+                        onyes: ()=>{
+                            document.body.classList.add('dark');
+                            popup.alert({
+                                msg: 'We Are Anonymous',
+                                type: 'blue'
+                            });
+                        }
+                        ,
+                        type: 'blue'
+                    });
+                    scrolledDown = true;
 
-	<!-- Icon Title -->
-	<link rel="icon" type="image/gif" href="https://zonemedia.github.io/favicon.ico">
-
-	<style type="text/css">
-		/* Google Font | Poppins & Montserrat Alternates */
-		@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&display=swap');
-		@import url('https://fonts.googleapis.com/css?family=Tangerine');
-
-		* {
-			margin: 0;
-			padding: 0;
-			box-sizing: border-box;
-		}
-
-		body {
-			position: relative;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			height: 100vh;
-			background: linear-gradient(45deg, #007ee5, #007ee5);
-			overflow: hidden;
-		}
-		body:before {
-			content: "";
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			width: 100%;
-			height: 120px;
-			background-size: cover;
-			background-repeat: no-repeat;
-			z-index: 999;
-		}
-
-		.content {
-			color: #ecf0f3;
-			text-align: center;
-			padding: 0 10px;
-		}
-
-		.title {
-			margin-top: -140px;
-			font-family: 'Tangerine', cursive;
-			font-size: 3.8em;
-			font-weight: 600;
-			letter-spacing: 2px;
-		}
-
-		.sub-title {
-			margin-top: 5px;
-			font-family: 'Poppins', sans-serif;
-			font-size: 1.2em;
-			font-weight: 400;
-			letter-spacing: 1px;
-		}
-
-		/* Btn | Play & Pause */
-		button {
-			position: absolute;
-			padding: 0 10px 0;
-			width: 100px;
-			height: 35px;
-			font-family: 'Poppins', sans-serif;
-			font-size: 1em;
-			color: #ecf0f3;
-			background: linear-gradient(155deg, #303132, #29292a);
-  			border: none;
-  			outline: none;
-  			cursor: pointer;
-  			z-index: 999;
-		}
-		button:hover {
-			background: #36393f;
-    		box-shadow: inset 5px 5px 8px #242526,
-                inset -5px -5px 10px #363738;
-			animation: animate 4s linear infinite;
-		}
-		@keyframes animate {
-			0% {background: #687980}
-			14% {background: #393e46}
-			28% {background: #334443}
-			42% {background: #1b1a17; box-shadow: none;}
-			56% {background: #1b1717}
-			70% {background: #364547}
-			84% {background: #536162}
-			100% {background: #5b5b5b}
-		}
-		.btn-play {
-			margin: 30px -110px;
-			border-radius: 30px 0 30px 0;
-		}
-		.btn-pause {
-			margin: 30px 5px;
-			border-radius: 0 30px 0 30px;
-		}
-		/* End */
-
-		/* Responsive for Mobile */
-		@media screen and (max-width: 468px) {
-			body:before {
-				animation: animate 12s linear infinite;
-			}
-			@keyframes animate {
-				0% {
-					background-position: 0; 
-				}
-				50% {
-					background-position: 100%; 
-				}
-				100% {
-					background-position: 0; 
-				}
-			}
-			
-			.content {
-				padding: 0 5px;
-			}
-			.title {
-				font-size: 3em;
-			}
-			.sub-title {
-				font-size: 1em;
-			}
-			.btn-play {
-				margin: 30px -105px;
-			}
-			.btn-pause {
-				margin: 30px 5px;
-			}
-		}
-		/* End */
-
-		/* Animation Canvas | Efek balon terbang */
-		.particles-js-canvas-el {
-			position: absolute;
-			top: 0;
-			left: 0;
-		}
-	</style>
-</head>
-<body>
-	<div class="content" id="particles-js">
-		<div class="title">Game Zonemedia</div>
-		<div class="sub-title">Game Online Gratis, Anda bisa langsung memainkan game yang anda sukai<br>tanpa iklan dan tanpa perlu mengunduh.<br>Cukup klik salah satu game untuk mulai memainkannya, Gratis!</div>
-		<div id="play-pause">
-			<a href="https://zoneamedia.blogspot.com"><button class="btn-play">Kembali</button></a>
-			<a href="https://zonemedia.github.io/game/First%20Contributions.html"><button class="btn-pause">Lanjutkan</button></a>
-		</div>
-	</div>
-
-	<!-- Particles JS -->
-	<script src="https://cdn.jsdelivr.net/gh/zonemedia/game/particles.js"></script>
-	<script type="text/javascript">
-		particlesJS('particles-js',
-			{
-				"particles": {
-					"number": {
-						"value": 40,
-						"density": {
-							"enable": true,
-							"value_area": 800
-						}
-					},
-					"color": {
-						"value": "#a6b1e1"
-					},
-					"shape": {
-						"type": "circle",
-						"stroke": {
-							"width": 0,
-							"color": "#000000"
-						},
-						"polygon": {
-							"nb_sides": 5
-						},
-						"image": {
-          					"src": "img/github.svg",
-          					"width": 100,
-          					"height": 100
-        				}
-					},
-					"opacity": {
-						"value": 1,
-        				"random": false,
-        				"anim": {
-        					"enable": false,
-          					"speed": 1,
-          					"opacity_min": 0.1,
-          					"sync": false
-        				} 
-					},
-					"size": {
-						"value": 5,
-        				"random": true,
-        				"anim": {
-        					"enable": false,
-          					"speed": 40,
-          					"size_min": 0.1,
-          					"sync": false
-        				}
-					},
-					"line_linked": {
-						"enable": false,
-        				"distance": 150,
-        				"color": "#ffffff",
-        				"opacity": 0.4,
-        				"width": 1
-					},
-					"move": {
-						"enable": true,
-        				"speed": 40,
-        				"direction": "top",
-        				"random": false,
-        				"straight": false,
-        				"out_mode": "out",
-        				"attract": {
-        		        	"enable": false,
-          					"rotateX": 600,
-          					"rotateY": 1200
-        				}
-					}
-				},
-				"interactivity": {
-					"detect_on": "canvas",
-      				"events": {
-      					"onhover": {
-      						"enable": false,
-      						"mode": "repulse"
-      					},
-      					"onclick": {
-      						"enable": true,
-      						"mode": "push"
-      					},
-      					"resize": true
-      				},
-      				"modes": {
-      					"grab": {
-      						"distance": 400,
-      						"line_linked": {
-      							"opacity": 1
-      						}
-      					},
-      					"buble": {
-      						"distance": 400,
-          					"size": 40,
-          					"duration": 2,
-          					"opacity": 8,
-          					"speed": 3
-      					},
-      					"repulse": {
-      						"distance": 200
-      					},
-      					"push": {
-      						"particles_nb": 4
-      					},
-      					"remove": {
-      						"particles_nb": 2
-      					}
-      				}
-				},
-				"retina_detect": true,
-				"config_demo": {
-				 	"hide_card": false,
-      			 	"background_color": "#b61924",
-      			 	"background_image": "",
-      			 	"background_position": "50% 50%",
-      			 	"background_repeat": "no-repeat",
-      			 	"background_size": "cover"
-				}
-			}
-		);
-	</script>
-</body>
+                }
+            });
+        </script>
+    </body>
 </html>
