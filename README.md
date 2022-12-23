@@ -60,3 +60,23 @@
 📁 music
 <br />
 📄 <a href="https://github.com/zonemedia/zonemedia.github.io/tree/master/game">index.html</a>
+<br />
+<br />
+<p>C:\xampp\htdocs>zonemedia.github.io/game/<a href="https://zonemedia.github.io/millionaire">millionaire</a></p>
+📁 css
+<br />
+📁 img
+<br />
+📁 public
+<br />
+📁 js
+<br />
+📁 sound
+<br />
+📁 util
+<br />
+📄 questions.json
+<br />
+📄 questions2.json
+<br />
+📄 <a href="https://github.com/zonemedia/zonemedia.github.io/tree/master/game/millionaire">index.html</a>
