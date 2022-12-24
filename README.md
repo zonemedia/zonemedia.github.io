@@ -62,7 +62,7 @@
 📄 <a href="https://github.com/zonemedia/zonemedia.github.io/tree/master/game">index.html</a>
 <br />
 <br />
-<p>C:\xampp\htdocs>zonemedia.github.io/game/<a href="https://zonemedia.github.io/millionaire">millionaire</a></p>
+<p>C:\xampp\htdocs>zonemedia.github.io/game/<a href="https://zonemedia.github.io/game/millionaire/">millionaire</a></p>
 📁 css
 <br />
 📁 img
