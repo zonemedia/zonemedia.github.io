@@ -57,7 +57,7 @@
 <br />
 <br />
 <p>C:\xampp\htdocs>zonemedia.github.io/<a href="https://zonemedia.github.io/game">game</a></p>
-📁 music
+📁 game
 <br />
 📄 <a href="https://github.com/zonemedia/zonemedia.github.io/tree/master/game">index.html</a>
 <br />
