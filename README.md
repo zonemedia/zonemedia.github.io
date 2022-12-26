@@ -88,3 +88,7 @@
 📁 js
 <br />
 📄 <a href="https://github.com/zonemedia/zonemedia.github.io/tree/master/game/typing">index.html</a>
+<br />
+<br />
+<p>C:\xampp\htdocs>zonemedia.github.io/game/<a href="https://zonemedia.github.io/game/pingpong.html">pingpong</a></p>
+📄 <a href="https://github.com/zonemedia/zonemedia.github.io/tree/master/game/">pingpong.html</a>
