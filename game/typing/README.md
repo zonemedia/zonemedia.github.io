@@ -1,4 +1,4 @@
-# Zonemedia.github.io/game/millionaire
+# Zonemedia.github.io/game/typing
 Demo : <a href="https://zonemedia.github.io/game/typing">zonemedia.github.io/game/typing</a>
 <br />
 <br />
