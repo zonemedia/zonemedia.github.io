@@ -1,475 +1,609 @@
 <!DOCTYPE html>
 <html lang='en' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
-<head>
-<link href='https://www.blogger.com/static/v1/widgets/55013136-widget_css_bundle.css' rel='stylesheet' type='text/css'/>
-<script>
-   var deskAdsNum=0;
-</script>
-<script async='async' src='https://www.rapidtables.com/lib/tagmng4.js'></script>
-<meta charset='utf-8'/>
-<meta content='width=device-width, initial-scale=1' name='viewport'/>
-<link href='https://www.rapidtables.com/lib/rapidz.css' rel='stylesheet' type='text/css'/>
-<link href='https://katahacker.web.app/text-to-speech/' rel='apple-touch-icon' sizes='180x180'/>
-<link rel="icon" href="https://zonemedia.github.io/favicon.ico" sizes="32x32" />
-<link rel="icon" href="https://zonemedia.github.io/favicon.ico" sizes="192x192" />
-<link href='https://www.rapidtables.com/lib/favicon/manifest.json' rel='manifest'/>
-<link color='#5bbad5' href='https://zonemedia.github.io/text-to-speech/' rel='mask-icon'/>
-<link href='https://zonemedia.github.io/text-to-speech/' rel='shortcut icon'/>
-<meta content='https://www.rapidtables.com/lib/favicon/browserconfig.xml' name='msapplication-config'/>
-<meta content='#ffffff' name='theme-color'/>
-<meta content='telephone=no' name='format-detection'/>
-<title>Text to Speech (TTS) Reader - Zonemedia</title>
-<style id='page-skin-1' type='text/css'><!--
-/****CSS CODE*****/
+    <head>
+        <link href='https://www.blogger.com/static/v1/widgets/55013136-widget_css_bundle.css' rel='stylesheet' type='text/css'/>
+        <script>
+            var deskAdsNum = 0;
+        </script>
+        <script async='async' src='https://www.rapidtables.com/lib/tagmng4.js'></script>
+        <meta charset='utf-8'/>
+        <meta content='width=device-width, initial-scale=1' name='viewport'/>
+        <link href='https://www.rapidtables.com/lib/rapidz.css' rel='stylesheet' type='text/css'/>
+        <link href='https://katahacker.web.app/text-to-speech/' rel='apple-touch-icon' sizes='180x180'/>
+        <link rel="icon" href="https://katahacker.blogspot.com/favicon.ico" sizes="32x32"/>
+        <link rel="icon" href="https://katahacker.blogspot.com/favicon.ico" sizes="192x192"/>
+        <link href='https://www.rapidtables.com/lib/favicon/manifest.json' rel='manifest'/>
+        <link color='#5bbad5' href='https://katahacker.web.app/text-to-speech/' rel='mask-icon'/>
+        <link href='https://katahacker.web.app/text-to-speech/' rel='shortcut icon'/>
+        <meta content='https://www.rapidtables.com/lib/favicon/browserconfig.xml' name='msapplication-config'/>
+        <meta content='#ffffff' name='theme-color'/>
+        <meta content='telephone=no' name='format-detection'/>
+        <title>Text to Speech (TTS) Reader Online</title>
+        <style id='page-skin-1' type='text/css'>
+            <!-- /****CSS CODE*****/
+            --></style>
+        <meta content='Text to speech (TTS) reader. Text to voice generator online app.' name='description'/>
+        <link crossorigin='anonymous' href='https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css' integrity='sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2' rel='stylesheet'/>
+        <style>
+            .adslot_2 {
+                height: 0;
+            }
 
---></style>
-<meta content='Text to speech (TTS) reader. Text to voice generator online app.' name='description'/>
-<link crossorigin='anonymous' href='https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css' integrity='sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2' rel='stylesheet'/>
-<style>
-   .adslot_2 { height:0; }
-   h1 { font-size:1.6rem; }
-   h2 { font-size:1.4rem; }
-   h3 { font-size:1.4rem; }
-   h4 { font-size:1.2rem; }
-   .btn img { filter:invert(1); }
-   #calcform {
-      padding:15px;
-      background:#eee8d5;
-      border:1px solid #eee;
-      border-radius:7px;
-   }
-   .btn i { vertical-align:middle; }
-	#play { width:80px; }
-	#area::-moz-selection { 
-    	background: #f8f800;
-		color:#000;
-	}
-	#area::selection {
-    	background: #fcfc00;
-		color:#000;
-      border-style:none;
-	}
-   .btn-light { background:#eee8d5; border-color:unset; border-color:#eee8d5; }
-   .btn-light:hover { background:#ded8c5; border-color:unset; border-color:#eee8d5; }
-   #topbar,#bar,#playslide { width:100%; background:#6c757d; background:#eee8d5; }
-   #playslide { padding:0px 1px 15px 1px; margin-top:0px;}
-   #bar { margin-top:-5px; }
-   #volbtn:hover ~ #volslide { display:block; /*transition: width 2s;*/ width:80px; }
-   #volslide { width:80px; padding:20px 5px !important; display:none; -webkit-transition: width 2s; transition: width 2s; }
-   #volslide:hover { display:block; }
-   #volslide::-webkit-slider-thumb { background:black; }
-   #voiceselect { max-width: 608px; max-width: 100%; width:unset; }
-   .fullscreen { position:fixed; top:0; left:0; right:0; bottom:0; height:100vh; }
-   .custom-range::-webkit-slider-thumb { background: red; z-index:1000; position:relative}
-   .custom-range::-webkit-slider-thumb:focus { color:red !important; }
-   .custom-range::-moz-range-thumb { background: red; }
-   .custom-range::-ms-thumb { background: red; }
-   .custom-range::-webkit-slider-thumb:active{background-color:red}
-   .custom-range:focus::-webkit-slider-thumb{box-shadow:0 0 0 1px #fff,0 0 0 .1rem #fff}.custom-range:focus::-moz-range-thumb{box-shadow:0 0 0 1px #fff,0 0 0 .1rem #fff}.custom-range:focus::-ms-thumb{box-shadow:0 0 0 1px #fff,0 0 0 .1rem #fff}
-   #area
-   #area:hover, 
-   #area:active, 
-   #area:focus
-   {
-      border:1px solid #ced4da;
-      outline:0px !important;
-      -webkit-appearance:none;
-      box-shadow: none !important;
-   }
-	@media all and (max-width: 600px) {
-   }
-	@media all and (min-width: 601px) {
-   }
-</style>
-<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
-<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+            h1 {
+                font-size: 1.6rem;
+            }
 
-</head>
-<body>
-<div class='hello no-items section' id='hello'></div>
-<div id='wrapper'>
-<div id='lcol'>
-<div id='doc'>
-<h1>Text to Speech Reader</h1>
-<form id='calcform'>
-<div id='topbar'>
-<div class='btn-group'>
-<button aria-label='Open File' class='btn btn-light' onclick='SpeechForm.open()' title='Open' type='button'><img alt='' height='24' loading='lazy' src='https://www.rapidtables.com/lib/icons/material/svg/folder_open_white_24dp.svg' width='24'/> Open File</button>
-<button class='btn btn-light' onclick='SpeechForm.copy()' title='Copy' type='button'><img alt='' height='24' loading='lazy' src='https://www.rapidtables.com/lib/icons/material/svg/content_copy_white_24dp.svg' width='24'/></button>
-<button class='btn btn-light' onclick='SpeechForm.selectall()' title='Select All' type='button'><img alt='' height='24' loading='lazy' src='https://www.rapidtables.com/lib/icons/material/svg/select_all_white_24dp.svg' width='24'/></button>
-<button class='btn btn-light' onclick='SpeechForm.zoomin()' title='Zoom In' type='button'><img alt='' height='24' loading='lazy' src='https://www.rapidtables.com/lib/icons/material/svg/zoom_in_white_24dp.svg' width='24'/></button>
-<button class='btn btn-light' onclick='SpeechForm.zoomout()' title='Zoom Out' type='button'><img alt='' height='24' loading='lazy' src='https://www.rapidtables.com/lib/icons/material/svg/zoom_out_white_24dp.svg' width='24'/></button>
-<input id='fileElem' multiple='' name='fileElem[]' onchange='SpeechForm.onfile()' style='visibility:hidden; width:30px' type='file'/>
-</div>
-</div>
-<textarea autofocus='' class='form-control' id='area' rows='10'>Hello World! My Name Is Samuel Pasaribu. I'am From Indonesia.</textarea>
-<input class='custom-range' id='playslide' min='0' type='range' value='0'/>
-<div id='bar'>
-<div aria-label='Basic example' class='btn-group' role='group'>
-<button class='btn btn-light' disabled='' id='play' onclick='SpeechForm.playbtn()' title='Play' type='button'><img alt='' height='24' loading='lazy' src='https://www.rapidtables.com/lib/icons/material/svg/play_arrow_white_24dp.svg' width='24'/></button>
-<button class='btn btn-light' disabled='' id='prev' onclick='SpeechForm.playprev()' title='Prev' type='button'><img alt='' height='24' loading='lazy' src='https://www.rapidtables.com/lib/icons/material/svg/skip_previous_white_24dp.svg' width='24'/></button>
-<button class='btn btn-light' disabled='' id='next' onclick='SpeechForm.playnext()' title='Next' type='button'><img alt='' height='24' loading='lazy' src='https://www.rapidtables.com/lib/icons/material/svg/skip_next_white_24dp.svg' width='24'/></button>
-<button class='btn btn-light' onclick='SpeechForm.stopbtn()' title='Stop' type='button'><img alt='' height='24' loading='lazy' src='https://www.rapidtables.com/lib/icons/material/svg/stop_white_24dp.svg' width='24'/></button>
-<button class='btn btn-light' id='volbtn' onclick='' title='Volume' type='button'><img alt='' height='24' loading='lazy' src='https://www.rapidtables.com/lib/icons/material/svg/volume_up_white_24dp.svg' width='24'/></button>
-<input class='custom-range' id='volslide' max='100' min='0' step='any' type='range'/>
-<button class='btn btn-light' id='full' onclick='SpeechForm.fullscreen()' title='Fullscreen' type='button'><img alt='' height='24' loading='lazy' src='https://www.rapidtables.com/lib/icons/material/svg/fullscreen_white_24dp.svg' width='24'/></button>
-</div>
-</div>
-<select class='form-control mt-3' id='voiceselect' onchange='SpeechForm.voicechange()'></select>
-</form>
-</div>
-</div>
-</div>
-<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-<script>
-   "use strict";
-   var isfullscreen=false;
-	var area,txt;
-   var fontsize=18;
-	var s = { INIT:1, PLAY:2, PAUSED:3, END:4 };
-	var iplay, previplay, playstate=s.INIT;
-	var start,end;
-	var msg=null;
-   var imsg;
-	var voices=[];
-	var voiceindex=3;
-	var volume;
-   var playslidemax;
-   var firstinit=true;
-   const fullElem = document.getElementById("full");
-   const playElem = document.getElementById("play");
-   const areaElem = document.getElementById("area");
-	$( document ).ready(function() {
-      try { eval('"use strict"; class foo {}'); } catch (e) { alert("Speech synthesis is not supported in this browser!\nPlease use Chrome browser."); }
-		SpeechSynth.init();
-      SpeechForm.init();
-	});
+            h2 {
+                font-size: 1.4rem;
+            }
 
-   class SpeechForm {
-      static init() {
-         playstate = s.INIT;
-         $("#play").prop("disabled",false);
-         $("#prev").prop("disabled",false);
-         $("#next").prop("disabled",false);
-         txt=areaElem.value;
-         txt=txt.replace(/\t/g,"");
-         areaElem.value=txt;
-         $("#bar").mouseleave(function() { SpeechForm.volhide(); });
-         $("#volbtn").hover(function() { SpeechForm.volshow(); });
-         $(window).on("unload blur", function() { SpeechForm.localSave(); });
-         $("#area").on("paste", function() { setTimeout(function(){ SpeechForm.init(); }, 500); });
-         $("#playslide").on("change input", function() { SpeechForm.onSlideChange(); });
-         $("#volslide").on("change input", function() { SpeechForm.onVolSlideChange(); });
-         SpeechForm.populateVoiceList();
-         if( firstinit==true )
-         {
-            firstinit=false;
-            $("#volslide").val(100);
-            SpeechForm.localLoad();
-         }
-         SpeechForm.initText();
-         SpeechForm.setslider(0);
-         SpeechForm.initslider();
-      }
-		static localLoad()
-		{
-			if( typeof(Storage)!=="undefined" ) {
-				var txt=localStorage.getItem("texttospeech_text");
-				if( txt!=null && txt!="" )
-					areaElem.value=txt;
-			}
-		}
-		static localSave()
-		{
-			if( typeof(Storage)!=="undefined"  ) {
-				var txt=areaElem.value;
-				localStorage.setItem("texttospeech_text", txt);
-			}
-		}
-      static onPlaySlideChange() {
-         var v=$("#playslide").val();
-      }
-      static onVolSlideChange() {
-         var v=$("#volslide").val()/100.0;
-         volume=v;
-      }
-      static populateVoiceList() {
-         var voices = SpeechSynth.getvoices();
-         if( voices==null ) return;
-         if( voices.length>21 ) voices.length=21;
-         for(var i=0; i<voices.length; i++) {
-               var textContent = voices[i].name + ' (' + voices[i].lang + ')';
-               if( textContent.substring(0,6)=="Google" )
-                  textContent = textContent.substring(7,textContent.length);
-               if( textContent.substring(0,9)=="Microsoft" )
-                  textContent = textContent.substring(10,textContent.length);
-               $("#voiceselect").append("<option>"+textContent+"</option>");
-         }
-         var i=1;
-         if( voices.length>=4 ) i=4;
-         $("#voiceselect option:nth-child("+i+")").prop("selected",true);
-         SpeechSynth.setvoice(i-1);
-      }
-      static initText()
-      {
-         txt=areaElem.value;
-         txt=txt.replace(/[.?!:,\r\n\]]/g,".");
-         txt=txt.replace(/\.\.+/g,".");
-         txt=txt.replace(/\.\s*/g, "|");
-         txt=txt.split("|");
-         txt=txt.filter(n => n);
-         playslidemax=txt.length-1;
-      }
-      static initslider()
-      {
-         //playslidemax=$("#area").val().replace(/([.?!:,\r\n])\s*/g, "$1|").split("|").length-1;
-         $("#playslide").prop("max",playslidemax);
-      }
-      static getslider()
-      {
-         return $("#playslide").val();
-      }
-      static setslider(v)
-      {
-         $("#playslide").val(v);
-      }
-      static volshow()
-      {
-         $("#volslide").css("display", "block");
-      }
-      static volhide()
-      {
-         $("#volslide").css("display", "none");
-      }
+            h3 {
+                font-size: 1.4rem;
+            }
 
-      static fullscreen()
-      {
-         if( !isfullscreen ) {
-            isfullscreen=true;
-            fullElem.children[0].src="https://www.rapidtables.com/lib/icons/material/svg/fullscreen_exit_white_24dp.svg";
-            //$("#full i").html("fullscreen_exit");
-            $("#ban-ad").css("display", "none");
-            $("#calcform").addClass("fullscreen");
-            document.body.style.overflow = 'hidden';
-         }
-         else {
-            isfullscreen=false;
-            fullElem.children[0].src="https://www.rapidtables.com/lib/icons/material/svg/fullscreen_white_24dp.svg";
-            //$("#full i").html("fullscreen");
-            $("#ban-ad").css("display", "block");
-            $("#calcform").removeClass("fullscreen");
-            document.body.style.overflow = 'visible';
-         }
-      }
-      static open()
-		{
-			$("#fileElem").click();
-		}
-      static onfile()
-		{
-			var file = document.getElementById("fileElem").files[0];
-         document.getElementById("fileElem").value="";
-			SpeechForm.fileLoad(file);
-		}
-		static fileLoad(file)
-		{
-			//var file = document.getElementById("fileElem").files[0];
-			//var name = fileElem.name;
-			var reader = new FileReader();
-			reader.onloadend=function(e) {
-				if( e.target.readyState==FileReader.DONE ) {
-					var t = e.target.result;
-					//var OSName = GetOS();
-					//if( OSName=="Windows" )
-					//	txt = txt.replace(/\r\n/gm,'\n');
-					//localStorage.notepad_filename = name;
-					//SetDocTitle();
-					areaElem.value=t;
-					areaElem.focus();
-					OnCount();
-               SpeechForm.init();
-				}
-			};
-			reader.readAsText(file, "UTF-8");
-         //SpeechForm.setslider(0);
-         //SpeechForm.initslider();
-		}
-      static copy()
-      {
-         areaElem.select();
-         document.execCommand('copy');
-      }
-      static zoomout()
-      {
-         fontsize/=1.1;
-         var size=Math.round(fontsize)+"px";
-         $("#area").css("font-size",size);
-      }
-      static zoomin()
-      {
-         fontsize*=1.1;
-         var size=Math.round(fontsize)+"px";
-         $("#area").css("font-size",size);
-      }
-      static voicechange() {
-         var i = $("#voiceselect")[0].selectedIndex;
-         SpeechSynth.setvoice(i);
-      }
-      //static volumebtn() {
-      //   //SpeechSynth.setvolume(i);
-      //}
-      //static volchange() {
-      //   var v = $("#volumerange").val();
-      //   SpeechSynth.setvolume(v);
-      //}
-      static selectall() {
-         $("#area").focus();
-         $("#area").select();
-      }
-      static resetform() {
-         SpeechSynth.stop();
-         areaElem.value="";
-         areaElem.focus();
-      }
-      static stopbtn() {
-         SpeechForm.setslider(0);
-         SpeechSynth.stop();
-         if( playstate==s.INIT ) {
-               playstate=s.END;
-               SpeechForm.playmng();
-         }
-         else
-               playstate=s.END;
-      }
-      static setselect() {
-         areaElem.selectionStart = start;
-         areaElem.selectionEnd = start;
-         areaElem.blur();
-         areaElem.focus();
-         areaElem.selectionStart = start;
-         areaElem.selectionEnd = end;
-         areaElem.focus();
-      }
-      static playbtn() {
-         //txt=txt.replace(/[!\?:\.]/g,'$& ');
-         //var s=txt.match(/([^ \r\n][^!\?:\.\r\n]+[\w!\?:\.]+)/g); // sentence match
-         //var s=txt.match(/[a-z'\-]+/gi); // word match
-         if( playstate==s.END ) playstate = s.INIT;
+            h4 {
+                font-size: 1.2rem;
+            }
 
-         if( playstate==s.INIT ) {
-            //$("#play").html("<i class='material-icons'>pause</i>");
-            playElem.children[0].src="https://www.rapidtables.com/lib/icons/material/svg/pause_white_24dp.svg";
-            SpeechForm.playmng();
-         }
-         else if( playstate==s.PLAY ) {
-            //$("#play").html("<i class='material-icons'>play_arrow</i>");
-            playElem.children[0].src="https://www.rapidtables.com/lib/icons/material/svg/play_arrow_white_24dp.svg";
-            playstate=s.PAUSED;
-            SpeechSynth.stop();
-            SpeechForm.setselect();
-         }
-         else if( playstate==s.PAUSED ) {
-            //$("#play").html("<i class='material-icons'>pause</i>");
-            playElem.children[0].src="https://www.rapidtables.com/lib/icons/material/svg/pause_white_24dp.svg";
-            playstate = s.PLAY;
-            iplay--;
-            SpeechForm.playmng();
-            SpeechForm.setselect();
-         }
-      }
-      static playnext() {
-         if( playstate == s.PLAY ) {
-            SpeechSynth.stop();
-            //if( ++iplay==txt.length )
-            if( iplay==txt.length )
-               playstate = s.END;
-            previplay=-1;
-            //SpeechForm.playmng();
-         }
-      }
-      static playprev() {
-         if( playstate == s.PLAY ) {
-            if( iplay<1 ) return;
-            SpeechSynth.stop();
-            if( iplay==1 )
-               iplay=0;
-            else
-               iplay-=2;
-            if( iplay<0 )
-               iplay=0;
-               //playstate = s.INIT;
-            previplay=-1;
-            //SpeechForm.playmng();
-         }
-      }
-      static playmng() {
-         switch( playstate ) {
-            case s.INIT:
-               SpeechSynth.stop();
-               area = areaElem.value;
-               if( area=="" ) {
-                  //$("#play").html("<i class='material-icons'>play_arrow</i>");
-                  playElem.children[0].src="https://www.rapidtables.com/lib/icons/material/svg/play_arrow_white_24dp.svg";
-                  return;
-               }
-               //txt=area.replace(/([.?!:,\r\n])\s*/g, "$1|").split("|");
-               //txt=txt.replace(/[\"\'\&#8217;\&#8216;]/gi, "");
-               //console.log(txt);
-               if( txt==null || txt.length==0 ) {
-                  //$("#play").html("<i class='material-icons'>play_arrow</i>");
-                  playElem.children[0].src="https://www.rapidtables.com/lib/icons/material/svg/play_arrow_white_24dp.svg";
-                  return;
-               }
-               iplay = start = end = 0;
-               previplay = -1;
-               playstate = s.PLAY;
-            case s.PLAY:
-               //console.log(iplay);
-               var t=txt[iplay].replace(/[\"\'\&#8217;\&#8216;]/gi, "");
-               if( t!="" )
-               {
-                  SpeechSynth.play(t);
-                  if( previplay != iplay ) {
-                     previplay = iplay;
-                     //start = area.indexOf(txt[iplay],end);
-                     start = area.indexOf(txt[iplay],0);
-                     end = start+txt[iplay].length;
-                  }
-                  SpeechForm.setselect();
-                  SpeechForm.setslider(iplay);
-               }
-               if( ++iplay==txt.length )
-                  playstate = s.END;
-               break;
-            case s.PAUSED:
-               //SpeechSynth.resume();
-               //playstate = s.PLAY;
-               break;
-            case s.END:
-               //$("#play").html("<i class='material-icons'>play_arrow</i>");
-               playElem.children[0].src="https://www.rapidtables.com/lib/icons/material/svg/play_arrow_white_24dp.svg";
-               areaElem.blur();
-               playstate = s.INIT;
-               break;
-            default:
-               console.log("Bad playstate!!!");
-         }
-      }
-	}
+            .btn img {
+                filter: invert(1);
+            }
 
-   class SpeechSynth {
-      static init() {
-         if( !('speechSynthesis' in window) ) {
-               alert("Speech synthesis is not supported in this browser!\nPlease use Chrome browser.");
-               return;
-         }
-         SpeechSynth.stop();
-         voices = window.speechSynthesis.getVoices();
-         //voiceindex=3;
-         volume=1.0;
-         //imsg=0;
-         //msg=[];
-         /*
+            #calcform {
+                padding: 15px;
+                background: #eee8d5;
+                border: 1px solid #eee;
+                border-radius: 7px;
+            }
+
+            .btn i {
+                vertical-align: middle;
+            }
+
+            #play {
+                width: 80px;
+            }
+
+            #area::-moz-selection {
+                background: #f8f800;
+                color: #000;
+            }
+
+            #area::selection {
+                background: #fcfc00;
+                color: #000;
+                border-style: none;
+            }
+
+            .btn-light {
+                background: #eee8d5;
+                border-color: unset;
+                border-color: #eee8d5;
+            }
+
+            .btn-light:hover {
+                background: #ded8c5;
+                border-color: unset;
+                border-color: #eee8d5;
+            }
+
+            #topbar,#bar,#playslide {
+                width: 100%;
+                background: #6c757d;
+                background: #eee8d5;
+            }
+
+            #playslide {
+                padding: 0px 1px 15px 1px;
+                margin-top: 0px;
+            }
+
+            #bar {
+                margin-top: -5px;
+            }
+
+            #volbtn:hover ~ #volslide {
+                display: block;
+                /*transition: width 2s;*/
+                width: 80px;
+            }
+
+            #volslide {
+                width: 80px;
+                padding: 20px 5px !important;
+                display: none;
+                -webkit-transition: width 2s;
+                transition: width 2s;
+            }
+
+            #volslide:hover {
+                display: block;
+            }
+
+            #volslide::-webkit-slider-thumb {
+                background: black;
+            }
+
+            #voiceselect {
+                max-width: 608px;
+                max-width: 100%;
+                width: unset;
+            }
+
+            .fullscreen {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                height: 100vh;
+            }
+
+            .custom-range::-webkit-slider-thumb {
+                background: red;
+                z-index: 1000;
+                position: relative
+            }
+
+            .custom-range::-webkit-slider-thumb:focus {
+                color: red !important;
+            }
+
+            .custom-range::-moz-range-thumb {
+                background: red;
+            }
+
+            .custom-range::-ms-thumb {
+                background: red;
+            }
+
+            .custom-range::-webkit-slider-thumb:active {
+                background-color: red
+            }
+
+            .custom-range:focus::-webkit-slider-thumb {
+                box-shadow: 0 0 0 1px #fff,0 0 0 .1rem #fff
+            }
+
+            .custom-range:focus::-moz-range-thumb {
+                box-shadow: 0 0 0 1px #fff,0 0 0 .1rem #fff
+            }
+
+            .custom-range:focus::-ms-thumb {
+                box-shadow: 0 0 0 1px #fff,0 0 0 .1rem #fff
+            }
+
+            #area #area:hover, #area:active, #area:focus {
+                border: 1px solid #ced4da;
+                outline: 0px !important;
+                -webkit-appearance: none;
+                box-shadow: none !important;
+            }
+
+            @media all and (max-width: 600px) {
+            }
+
+            @media all and (min-width: 601px) {
+            }
+        </style>
+        <meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+        <meta name='google-adsense-platform-domain' content='blogspot.com'/>
+    </head>
+    <body>
+        <div class='hello no-items section' id='hello'></div>
+        <div id='wrapper'>
+            <div id='lcol'>
+                <div id='doc'>
+                    <h1>Text to Speech Reader</h1>
+                    <form id='calcform'>
+                        <div id='topbar'>
+                            <div class='btn-group'>
+                                <button aria-label='Open File' class='btn btn-light' onclick='SpeechForm.open()' title='Open' type='button'>
+                                    <img alt='' height='24' loading='lazy' src='https://www.rapidtables.com/lib/icons/material/svg/folder_open_white_24dp.svg' width='24'/>Open File
+                                </button>
+                                <button class='btn btn-light' onclick='SpeechForm.copy()' title='Copy' type='button'>
+                                    <img alt='' height='24' loading='lazy' src='https://www.rapidtables.com/lib/icons/material/svg/content_copy_white_24dp.svg' width='24'/>
+                                </button>
+                                <button class='btn btn-light' onclick='SpeechForm.selectall()' title='Select All' type='button'>
+                                    <img alt='' height='24' loading='lazy' src='https://www.rapidtables.com/lib/icons/material/svg/select_all_white_24dp.svg' width='24'/>
+                                </button>
+                                <button class='btn btn-light' onclick='SpeechForm.zoomin()' title='Zoom In' type='button'>
+                                    <img alt='' height='24' loading='lazy' src='https://www.rapidtables.com/lib/icons/material/svg/zoom_in_white_24dp.svg' width='24'/>
+                                </button>
+                                <button class='btn btn-light' onclick='SpeechForm.zoomout()' title='Zoom Out' type='button'>
+                                    <img alt='' height='24' loading='lazy' src='https://www.rapidtables.com/lib/icons/material/svg/zoom_out_white_24dp.svg' width='24'/>
+                                </button>
+                                <input id='fileElem' multiple='' name='fileElem[]' onchange='SpeechForm.onfile()' style='visibility:hidden; width:30px' type='file'/>
+                            </div>
+                        </div>
+                        <textarea autofocus='' class='form-control' id='area' rows='10'>Hello World! My Name Is Samuel Pasaribu. I'am From Indonesia.</textarea>
+                        <input class='custom-range' id='playslide' min='0' type='range' value='0'/>
+                        <div id='bar'>
+                            <div aria-label='Basic example' class='btn-group' role='group'>
+                                <button class='btn btn-light' disabled='' id='play' onclick='SpeechForm.playbtn()' title='Play' type='button'>
+                                    <img alt='' height='24' loading='lazy' src='https://www.rapidtables.com/lib/icons/material/svg/play_arrow_white_24dp.svg' width='24'/>
+                                </button>
+                                <button class='btn btn-light' disabled='' id='prev' onclick='SpeechForm.playprev()' title='Prev' type='button'>
+                                    <img alt='' height='24' loading='lazy' src='https://www.rapidtables.com/lib/icons/material/svg/skip_previous_white_24dp.svg' width='24'/>
+                                </button>
+                                <button class='btn btn-light' disabled='' id='next' onclick='SpeechForm.playnext()' title='Next' type='button'>
+                                    <img alt='' height='24' loading='lazy' src='https://www.rapidtables.com/lib/icons/material/svg/skip_next_white_24dp.svg' width='24'/>
+                                </button>
+                                <button class='btn btn-light' onclick='SpeechForm.stopbtn()' title='Stop' type='button'>
+                                    <img alt='' height='24' loading='lazy' src='https://www.rapidtables.com/lib/icons/material/svg/stop_white_24dp.svg' width='24'/>
+                                </button>
+                                <button class='btn btn-light' id='volbtn' onclick='' title='Volume' type='button'>
+                                    <img alt='' height='24' loading='lazy' src='https://www.rapidtables.com/lib/icons/material/svg/volume_up_white_24dp.svg' width='24'/>
+                                </button>
+                                <input class='custom-range' id='volslide' max='100' min='0' step='any' type='range'/>
+                                <button class='btn btn-light' id='full' onclick='SpeechForm.fullscreen()' title='Fullscreen' type='button'>
+                                    <img alt='' height='24' loading='lazy' src='https://www.rapidtables.com/lib/icons/material/svg/fullscreen_white_24dp.svg' width='24'/>
+                                </button>
+                            </div>
+                        </div>
+                        <select class='form-control mt-3' id='voiceselect' onchange='SpeechForm.voicechange()'></select>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+        <script>
+            "use strict";
+            var isfullscreen = false;
+            var area, txt;
+            var fontsize = 18;
+            var s = {
+                INIT: 1,
+                PLAY: 2,
+                PAUSED: 3,
+                END: 4
+            };
+            var iplay, previplay, playstate = s.INIT;
+            var start, end;
+            var msg = null;
+            var imsg;
+            var voices = [];
+            var voiceindex = 3;
+            var volume;
+            var playslidemax;
+            var firstinit = true;
+            const fullElem = document.getElementById("full");
+            const playElem = document.getElementById("play");
+            const areaElem = document.getElementById("area");
+            $(document).ready(function() {
+                try {
+                    eval('"use strict"; class foo {}');
+                } catch (e) {
+                    alert("Speech synthesis is not supported in this browser!\nPlease use Chrome browser.");
+                }
+                SpeechSynth.init();
+                SpeechForm.init();
+            });
+
+            class SpeechForm {
+                static init() {
+                    playstate = s.INIT;
+                    $("#play").prop("disabled", false);
+                    $("#prev").prop("disabled", false);
+                    $("#next").prop("disabled", false);
+                    txt = areaElem.value;
+                    txt = txt.replace(/\t/g, "");
+                    areaElem.value = txt;
+                    $("#bar").mouseleave(function() {
+                        SpeechForm.volhide();
+                    });
+                    $("#volbtn").hover(function() {
+                        SpeechForm.volshow();
+                    });
+                    $(window).on("unload blur", function() {
+                        SpeechForm.localSave();
+                    });
+                    $("#area").on("paste", function() {
+                        setTimeout(function() {
+                            SpeechForm.init();
+                        }, 500);
+                    });
+                    $("#playslide").on("change input", function() {
+                        SpeechForm.onSlideChange();
+                    });
+                    $("#volslide").on("change input", function() {
+                        SpeechForm.onVolSlideChange();
+                    });
+                    SpeechForm.populateVoiceList();
+                    if (firstinit == true) {
+                        firstinit = false;
+                        $("#volslide").val(100);
+                        SpeechForm.localLoad();
+                    }
+                    SpeechForm.initText();
+                    SpeechForm.setslider(0);
+                    SpeechForm.initslider();
+                }
+                static localLoad() {
+                    if (typeof (Storage) !== "undefined") {
+                        var txt = localStorage.getItem("texttospeech_text");
+                        if (txt != null && txt != "")
+                            areaElem.value = txt;
+                    }
+                }
+                static localSave() {
+                    if (typeof (Storage) !== "undefined") {
+                        var txt = areaElem.value;
+                        localStorage.setItem("texttospeech_text", txt);
+                    }
+                }
+                static onPlaySlideChange() {
+                    var v = $("#playslide").val();
+                }
+                static onVolSlideChange() {
+                    var v = $("#volslide").val() / 100.0;
+                    volume = v;
+                }
+                static populateVoiceList() {
+                    var voices = SpeechSynth.getvoices();
+                    if (voices == null)
+                        return;
+                    if (voices.length > 21)
+                        voices.length = 21;
+                    for (var i = 0; i < voices.length; i++) {
+                        var textContent = voices[i].name + ' (' + voices[i].lang + ')';
+                        if (textContent.substring(0, 6) == "Google")
+                            textContent = textContent.substring(7, textContent.length);
+                        if (textContent.substring(0, 9) == "Microsoft")
+                            textContent = textContent.substring(10, textContent.length);
+                        $("#voiceselect").append("<option>" + textContent + "</option>");
+                    }
+                    var i = 1;
+                    if (voices.length >= 4)
+                        i = 4;
+                    $("#voiceselect option:nth-child(" + i + ")").prop("selected", true);
+                    SpeechSynth.setvoice(i - 1);
+                }
+                static initText() {
+                    txt = areaElem.value;
+                    txt = txt.replace(/[.?!:,\r\n\]]/g, ".");
+                    txt = txt.replace(/\.\.+/g, ".");
+                    txt = txt.replace(/\.\s*/g, "|");
+                    txt = txt.split("|");
+                    txt = txt.filter(n=>n);
+                    playslidemax = txt.length - 1;
+                }
+                static initslider() {
+                    //playslidemax=$("#area").val().replace(/([.?!:,\r\n])\s*/g, "$1|").split("|").length-1;
+                    $("#playslide").prop("max", playslidemax);
+                }
+                static getslider() {
+                    return $("#playslide").val();
+                }
+                static setslider(v) {
+                    $("#playslide").val(v);
+                }
+                static volshow() {
+                    $("#volslide").css("display", "block");
+                }
+                static volhide() {
+                    $("#volslide").css("display", "none");
+                }
+
+                static fullscreen() {
+                    if (!isfullscreen) {
+                        isfullscreen = true;
+                        fullElem.children[0].src = "https://www.rapidtables.com/lib/icons/material/svg/fullscreen_exit_white_24dp.svg";
+                        //$("#full i").html("fullscreen_exit");
+                        $("#ban-ad").css("display", "none");
+                        $("#calcform").addClass("fullscreen");
+                        document.body.style.overflow = 'hidden';
+                    } else {
+                        isfullscreen = false;
+                        fullElem.children[0].src = "https://www.rapidtables.com/lib/icons/material/svg/fullscreen_white_24dp.svg";
+                        //$("#full i").html("fullscreen");
+                        $("#ban-ad").css("display", "block");
+                        $("#calcform").removeClass("fullscreen");
+                        document.body.style.overflow = 'visible';
+                    }
+                }
+                static open() {
+                    $("#fileElem").click();
+                }
+                static onfile() {
+                    var file = document.getElementById("fileElem").files[0];
+                    document.getElementById("fileElem").value = "";
+                    SpeechForm.fileLoad(file);
+                }
+                static fileLoad(file) {
+                    //var file = document.getElementById("fileElem").files[0];
+                    //var name = fileElem.name;
+                    var reader = new FileReader();
+                    reader.onloadend = function(e) {
+                        if (e.target.readyState == FileReader.DONE) {
+                            var t = e.target.result;
+                            //var OSName = GetOS();
+                            //if( OSName=="Windows" )
+                            //	txt = txt.replace(/\r\n/gm,'\n');
+                            //localStorage.notepad_filename = name;
+                            //SetDocTitle();
+                            areaElem.value = t;
+                            areaElem.focus();
+                            OnCount();
+                            SpeechForm.init();
+                        }
+                    }
+                    ;
+                    reader.readAsText(file, "UTF-8");
+                    //SpeechForm.setslider(0);
+                    //SpeechForm.initslider();
+                }
+                static copy() {
+                    areaElem.select();
+                    document.execCommand('copy');
+                }
+                static zoomout() {
+                    fontsize /= 1.1;
+                    var size = Math.round(fontsize) + "px";
+                    $("#area").css("font-size", size);
+                }
+                static zoomin() {
+                    fontsize *= 1.1;
+                    var size = Math.round(fontsize) + "px";
+                    $("#area").css("font-size", size);
+                }
+                static voicechange() {
+                    var i = $("#voiceselect")[0].selectedIndex;
+                    SpeechSynth.setvoice(i);
+                }
+                //static volumebtn() {
+                //   //SpeechSynth.setvolume(i);
+                //}
+                //static volchange() {
+                //   var v = $("#volumerange").val();
+                //   SpeechSynth.setvolume(v);
+                //}
+                static selectall() {
+                    $("#area").focus();
+                    $("#area").select();
+                }
+                static resetform() {
+                    SpeechSynth.stop();
+                    areaElem.value = "";
+                    areaElem.focus();
+                }
+                static stopbtn() {
+                    SpeechForm.setslider(0);
+                    SpeechSynth.stop();
+                    if (playstate == s.INIT) {
+                        playstate = s.END;
+                        SpeechForm.playmng();
+                    } else
+                        playstate = s.END;
+                }
+                static setselect() {
+                    areaElem.selectionStart = start;
+                    areaElem.selectionEnd = start;
+                    areaElem.blur();
+                    areaElem.focus();
+                    areaElem.selectionStart = start;
+                    areaElem.selectionEnd = end;
+                    areaElem.focus();
+                }
+                static playbtn() {
+                    //txt=txt.replace(/[!\?:\.]/g,'$& ');
+                    //var s=txt.match(/([^ \r\n][^!\?:\.\r\n]+[\w!\?:\.]+)/g); // sentence match
+                    //var s=txt.match(/[a-z'\-]+/gi); // word match
+                    if (playstate == s.END)
+                        playstate = s.INIT;
+
+                    if (playstate == s.INIT) {
+                        //$("#play").html("<i class='material-icons'>pause</i>");
+                        playElem.children[0].src = "https://www.rapidtables.com/lib/icons/material/svg/pause_white_24dp.svg";
+                        SpeechForm.playmng();
+                    } else if (playstate == s.PLAY) {
+                        //$("#play").html("<i class='material-icons'>play_arrow</i>");
+                        playElem.children[0].src = "https://www.rapidtables.com/lib/icons/material/svg/play_arrow_white_24dp.svg";
+                        playstate = s.PAUSED;
+                        SpeechSynth.stop();
+                        SpeechForm.setselect();
+                    } else if (playstate == s.PAUSED) {
+                        //$("#play").html("<i class='material-icons'>pause</i>");
+                        playElem.children[0].src = "https://www.rapidtables.com/lib/icons/material/svg/pause_white_24dp.svg";
+                        playstate = s.PLAY;
+                        iplay--;
+                        SpeechForm.playmng();
+                        SpeechForm.setselect();
+                    }
+                }
+                static playnext() {
+                    if (playstate == s.PLAY) {
+                        SpeechSynth.stop();
+                        //if( ++iplay==txt.length )
+                        if (iplay == txt.length)
+                            playstate = s.END;
+                        previplay = -1;
+                        //SpeechForm.playmng();
+                    }
+                }
+                static playprev() {
+                    if (playstate == s.PLAY) {
+                        if (iplay < 1)
+                            return;
+                        SpeechSynth.stop();
+                        if (iplay == 1)
+                            iplay = 0;
+                        else
+                            iplay -= 2;
+                        if (iplay < 0)
+                            iplay = 0;
+                        //playstate = s.INIT;
+                        previplay = -1;
+                        //SpeechForm.playmng();
+                    }
+                }
+                static playmng() {
+                    switch (playstate) {
+                    case s.INIT:
+                        SpeechSynth.stop();
+                        area = areaElem.value;
+                        if (area == "") {
+                            //$("#play").html("<i class='material-icons'>play_arrow</i>");
+                            playElem.children[0].src = "https://www.rapidtables.com/lib/icons/material/svg/play_arrow_white_24dp.svg";
+                            return;
+                        }
+                        //txt=area.replace(/([.?!:,\r\n])\s*/g, "$1|").split("|");
+                        //txt=txt.replace(/[\"\'\&#8217;\&#8216;]/gi, "");
+                        //console.log(txt);
+                        if (txt == null || txt.length == 0) {
+                            //$("#play").html("<i class='material-icons'>play_arrow</i>");
+                            playElem.children[0].src = "https://www.rapidtables.com/lib/icons/material/svg/play_arrow_white_24dp.svg";
+                            return;
+                        }
+                        iplay = start = end = 0;
+                        previplay = -1;
+                        playstate = s.PLAY;
+                    case s.PLAY:
+                        //console.log(iplay);
+                        var t = txt[iplay].replace(/[\"\'\&#8217;\&#8216;]/gi, "");
+                        if (t != "") {
+                            SpeechSynth.play(t);
+                            if (previplay != iplay) {
+                                previplay = iplay;
+                                //start = area.indexOf(txt[iplay],end);
+                                start = area.indexOf(txt[iplay], 0);
+                                end = start + txt[iplay].length;
+                            }
+                            SpeechForm.setselect();
+                            SpeechForm.setslider(iplay);
+                        }
+                        if (++iplay == txt.length)
+                            playstate = s.END;
+                        break;
+                    case s.PAUSED:
+                        //SpeechSynth.resume();
+                        //playstate = s.PLAY;
+                        break;
+                    case s.END:
+                        //$("#play").html("<i class='material-icons'>play_arrow</i>");
+                        playElem.children[0].src = "https://www.rapidtables.com/lib/icons/material/svg/play_arrow_white_24dp.svg";
+                        areaElem.blur();
+                        playstate = s.INIT;
+                        break;
+                    default:
+                        console.log("Bad playstate!!!");
+                    }
+                }
+            }
+
+            class SpeechSynth {
+                static init() {
+                    if (!('speechSynthesis'in window)) {
+                        alert("Speech synthesis is not supported in this browser!\nPlease use Chrome browser.");
+                        return;
+                    }
+                    SpeechSynth.stop();
+                    voices = window.speechSynthesis.getVoices();
+                    //voiceindex=3;
+                    volume = 1.0;
+                    //imsg=0;
+                    //msg=[];
+                    /*
          msg[0] = new SpeechSynthesisUtterance();
          msg[0].onend = function(e) {
                //console.log('Finished in ' + e.elapsedTime + ' seconds.');
@@ -479,71 +613,231 @@
                console.log('Error in ' + e.elapsedTime + ' seconds.');
                SpeechForm.playmng();
          };*/
-         if (speechSynthesis.onvoiceschanged !== undefined) {
-               speechSynthesis.onvoiceschanged = function() {
-                  //console.log("onvoiceschanged()");
-                  if( voices.length>0 ) return;
-                  voices = window.speechSynthesis.getVoices()
-                  SpeechForm.populateVoiceList();
-               };
-         }
-      }
-      static getvoices() {
-         return voices;
-      }
-      static setvoice(i) {
-         voiceindex = i;
-      }
-      //static setvolume(v) {
-      //   msg.volume = v; //0..1
-      //   console.log(v);
-      //}
-      static ispending() {
-         return window.speechSynthesis.pending;
-      }
-      static stop() {
-         window.speechSynthesis.cancel();
-      }
-      static pause() {
-         //if( window.speechSynthesis.speaking )
-         window.speechSynthesis.pause();
-      }
-      static resume() {
-         window.speechSynthesis.resume();
-      }
-      static play(s) {
-         //voices = window.speechSynthesis.getVoices();
-         if( voices.length==0 ) alert("No voices detected. Please restart the browser and try again.");
-         msg = new SpeechSynthesisUtterance();
-         msg.onend = function(e) {
-            //console.log('Finished in ' + e.elapsedTime + ' seconds.');
-            SpeechForm.playmng();
-         };
-         msg.onerror = function(e) {
-            console.log('Error in ' + e.elapsedTime + ' seconds.');
-            SpeechForm.playmng();
-         };
-         msg.voice = voices[voiceindex];
-         //msg.voiceURI = 'native';
-         msg.volume = volume; // 0 to 1
-         msg.rate = 1.0; // 0.1 to 10
-         msg.pitch = 0; //0 to 2
-         msg.text = s;
-         //msg.lang = '';
-         //msg.lang = 'en-US'; //!!!
-         msg.lang = voices[voiceindex].lang; //!!!
-         //console.log(msg);
-         window.speechSynthesis.speak(msg);
-         //setTimeout(function() { window.speechSynthesis.speak(msg); }, 0);
-         if( ++imsg==2 ) imsg=0;
-      }
-   }
-</script>
-
-<script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/1997315711-widgets.js"></script>
-<script type='text/javascript'>
-window['__wavt'] = 'AOuZoY7K6OjvQsI_LEAUsk0zDZnmLXR-JA:1657346682508';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d5261344171001050644','//text2speech.prinsh.com//p/bot-menulis.html','5261344171001050644');
-_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '5261344171001050644', 'title': 'Online Text To Speech | Nathan Prinsley', 'url': 'https://text2speech.prinsh.com//p/bot-menulis.html', 'canonicalUrl': 'https://text2speech.prinsh.com//p/bot-menulis.html', 'homepageUrl': 'https://text2speech.prinsh.com/', 'searchUrl': 'https://text2speech.prinsh.com/search', 'canonicalHomepageUrl': 'https://text2speech.prinsh.com/', 'blogspotFaviconUrl': 'https://text2speech.prinsh.com/favicon.ico', 'bloggerUrl': 'https://www.blogger.com', 'hasCustomDomain': true, 'httpsEnabled': true, 'enabledCommentProfileImages': true, 'gPlusViewType': 'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': '', 'encoding': 'UTF-8', 'locale': 'id', 'localeUnderscoreDelimited': 'id', 'languageDirection': 'ltr', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'isDynamicViewsAvailable': true, 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Online Text To Speech | Nathan Prinsley - Atom\x22 href\x3d\x22https://text2speech.prinsh.com/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22Online Text To Speech | Nathan Prinsley - RSS\x22 href\x3d\x22https://text2speech.prinsh.com/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Online Text To Speech | Nathan Prinsley - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/5261344171001050644/posts/default\x22 /\x3e\n', 'meTag': '', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'adsenseHasAds': false, 'adsenseAutoAds': false, 'boqCommentIframeForm': true, 'loginRedirectParam': '', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/13b516470de5241c', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'disableGComments': true, 'sharing': {'platforms': [{'name': 'Dapatkan link', 'key': 'link', 'shareMessage': 'Dapatkan link', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 'shareMessage': 'Bagikan ke Facebook', 'target': 'facebook'}, {'name': 'BlogThis!', 'key': 'blogThis', 'shareMessage': 'BlogThis!', 'target': 'blog'}, {'name': 'Twitter', 'key': 'twitter', 'shareMessage': 'Bagikan ke Twitter', 'target': 'twitter'}, {'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': 'Bagikan ke Pinterest', 'target': 'pinterest'}, {'name': 'Email', 'key': 'email', 'shareMessage': 'Email', 'target': 'email'}], 'disableGooglePlus': true, 'googlePlusShareButtonWidth': 0, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27id\x27};\x3c/script\x3e'}, 'hasCustomJumpLinkMessage': false, 'jumpLinkMessage': 'Baca selengkapnya', 'pageType': 'error_page', 'pageName': '', 'pageTitle': 'Online Text To Speech | Nathan Prinsley'}}, {'name': 'features', 'data': {'sharing_get_link_dialog': 'true', 'sharing_native': 'false'}}, {'name': 'messages', 'data': {'edit': 'Edit', 'linkCopiedToClipboard': 'Tautan disalin ke papan klip!', 'ok': 'Oke', 'postLink': 'Tautan Pos'}}, {'name': 'template', 'data': {'name': 'custom', 'localizedName': 'Khusus', 'isResponsive': false, 'isAlternateRendering': false, 'isCustom': true}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'isMobile': false, 'title': 'Online Text To Speech | Nathan Prinsley', 'description': '', 'url': 'https://text2speech.prinsh.com//p/bot-menulis.html', 'type': 'error', 'isSingleItem': false, 'isMultipleItems': false, 'isError': true, 'isPage': false, 'isPost': false, 'isHomepage': false, 'isArchive': false, 'isLabelSearch': false}}]);
-</script>
-</body>
+                    if (speechSynthesis.onvoiceschanged !== undefined) {
+                        speechSynthesis.onvoiceschanged = function() {
+                            //console.log("onvoiceschanged()");
+                            if (voices.length > 0)
+                                return;
+                            voices = window.speechSynthesis.getVoices()
+                            SpeechForm.populateVoiceList();
+                        }
+                        ;
+                    }
+                }
+                static getvoices() {
+                    return voices;
+                }
+                static setvoice(i) {
+                    voiceindex = i;
+                }
+                //static setvolume(v) {
+                //   msg.volume = v; //0..1
+                //   console.log(v);
+                //}
+                static ispending() {
+                    return window.speechSynthesis.pending;
+                }
+                static stop() {
+                    window.speechSynthesis.cancel();
+                }
+                static pause() {
+                    //if( window.speechSynthesis.speaking )
+                    window.speechSynthesis.pause();
+                }
+                static resume() {
+                    window.speechSynthesis.resume();
+                }
+                static play(s) {
+                    //voices = window.speechSynthesis.getVoices();
+                    if (voices.length == 0)
+                        alert("No voices detected. Please restart the browser and try again.");
+                    msg = new SpeechSynthesisUtterance();
+                    msg.onend = function(e) {
+                        //console.log('Finished in ' + e.elapsedTime + ' seconds.');
+                        SpeechForm.playmng();
+                    }
+                    ;
+                    msg.onerror = function(e) {
+                        console.log('Error in ' + e.elapsedTime + ' seconds.');
+                        SpeechForm.playmng();
+                    }
+                    ;
+                    msg.voice = voices[voiceindex];
+                    //msg.voiceURI = 'native';
+                    msg.volume = volume;
+                    // 0 to 1
+                    msg.rate = 1.0;
+                    // 0.1 to 10
+                    msg.pitch = 0;
+                    //0 to 2
+                    msg.text = s;
+                    //msg.lang = '';
+                    //msg.lang = 'en-US'; //!!!
+                    msg.lang = voices[voiceindex].lang;
+                    //!!!
+                    //console.log(msg);
+                    window.speechSynthesis.speak(msg);
+                    //setTimeout(function() { window.speechSynthesis.speak(msg); }, 0);
+                    if (++imsg == 2)
+                        imsg = 0;
+                }
+            }
+        </script>
+        <script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/1997315711-widgets.js"></script>
+        <script type='text/javascript'>
+            window['__wavt'] = 'AOuZoY7K6OjvQsI_LEAUsk0zDZnmLXR-JA:1657346682508';
+            _WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d5261344171001050644', '//text2speech.prinsh.com//p/bot-menulis.html', '5261344171001050644');
+            _WidgetManager._SetDataContext([{
+                'name': 'blog',
+                'data': {
+                    'blogId': '5261344171001050644',
+                    'title': 'Online Text To Speech | Nathan Prinsley',
+                    'url': 'https://text2speech.prinsh.com//p/bot-menulis.html',
+                    'canonicalUrl': 'https://text2speech.prinsh.com//p/bot-menulis.html',
+                    'homepageUrl': 'https://text2speech.prinsh.com/',
+                    'searchUrl': 'https://text2speech.prinsh.com/search',
+                    'canonicalHomepageUrl': 'https://text2speech.prinsh.com/',
+                    'blogspotFaviconUrl': 'https://text2speech.prinsh.com/favicon.ico',
+                    'bloggerUrl': 'https://www.blogger.com',
+                    'hasCustomDomain': true,
+                    'httpsEnabled': true,
+                    'enabledCommentProfileImages': true,
+                    'gPlusViewType': 'FILTERED_POSTMOD',
+                    'adultContent': false,
+                    'analyticsAccountNumber': '',
+                    'encoding': 'UTF-8',
+                    'locale': 'id',
+                    'localeUnderscoreDelimited': 'id',
+                    'languageDirection': 'ltr',
+                    'isPrivate': false,
+                    'isMobile': false,
+                    'isMobileRequest': false,
+                    'mobileClass': '',
+                    'isPrivateBlog': false,
+                    'isDynamicViewsAvailable': true,
+                    'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Online Text To Speech | Nathan Prinsley - Atom\x22 href\x3d\x22https://text2speech.prinsh.com/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22Online Text To Speech | Nathan Prinsley - RSS\x22 href\x3d\x22https://text2speech.prinsh.com/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Online Text To Speech | Nathan Prinsley - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/5261344171001050644/posts/default\x22 /\x3e\n',
+                    'meTag': '',
+                    'adsenseHostId': 'ca-host-pub-1556223355139109',
+                    'adsenseHasAds': false,
+                    'adsenseAutoAds': false,
+                    'boqCommentIframeForm': true,
+                    'loginRedirectParam': '',
+                    'view': '',
+                    'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js',
+                    'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/13b516470de5241c',
+                    'plusOneApiSrc': 'https://apis.google.com/js/plusone.js',
+                    'disableGComments': true,
+                    'sharing': {
+                        'platforms': [{
+                            'name': 'Dapatkan link',
+                            'key': 'link',
+                            'shareMessage': 'Dapatkan link',
+                            'target': ''
+                        }, {
+                            'name': 'Facebook',
+                            'key': 'facebook',
+                            'shareMessage': 'Bagikan ke Facebook',
+                            'target': 'facebook'
+                        }, {
+                            'name': 'BlogThis!',
+                            'key': 'blogThis',
+                            'shareMessage': 'BlogThis!',
+                            'target': 'blog'
+                        }, {
+                            'name': 'Twitter',
+                            'key': 'twitter',
+                            'shareMessage': 'Bagikan ke Twitter',
+                            'target': 'twitter'
+                        }, {
+                            'name': 'Pinterest',
+                            'key': 'pinterest',
+                            'shareMessage': 'Bagikan ke Pinterest',
+                            'target': 'pinterest'
+                        }, {
+                            'name': 'Email',
+                            'key': 'email',
+                            'shareMessage': 'Email',
+                            'target': 'email'
+                        }],
+                        'disableGooglePlus': true,
+                        'googlePlusShareButtonWidth': 0,
+                        'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27id\x27};\x3c/script\x3e'
+                    },
+                    'hasCustomJumpLinkMessage': false,
+                    'jumpLinkMessage': 'Baca selengkapnya',
+                    'pageType': 'error_page',
+                    'pageName': '',
+                    'pageTitle': 'Online Text To Speech | Nathan Prinsley'
+                }
+            }, {
+                'name': 'features',
+                'data': {
+                    'sharing_get_link_dialog': 'true',
+                    'sharing_native': 'false'
+                }
+            }, {
+                'name': 'messages',
+                'data': {
+                    'edit': 'Edit',
+                    'linkCopiedToClipboard': 'Tautan disalin ke papan klip!',
+                    'ok': 'Oke',
+                    'postLink': 'Tautan Pos'
+                }
+            }, {
+                'name': 'template',
+                'data': {
+                    'name': 'custom',
+                    'localizedName': 'Khusus',
+                    'isResponsive': false,
+                    'isAlternateRendering': false,
+                    'isCustom': true
+                }
+            }, {
+                'name': 'view',
+                'data': {
+                    'classic': {
+                        'name': 'classic',
+                        'url': '?view\x3dclassic'
+                    },
+                    'flipcard': {
+                        'name': 'flipcard',
+                        'url': '?view\x3dflipcard'
+                    },
+                    'magazine': {
+                        'name': 'magazine',
+                        'url': '?view\x3dmagazine'
+                    },
+                    'mosaic': {
+                        'name': 'mosaic',
+                        'url': '?view\x3dmosaic'
+                    },
+                    'sidebar': {
+                        'name': 'sidebar',
+                        'url': '?view\x3dsidebar'
+                    },
+                    'snapshot': {
+                        'name': 'snapshot',
+                        'url': '?view\x3dsnapshot'
+                    },
+                    'timeslide': {
+                        'name': 'timeslide',
+                        'url': '?view\x3dtimeslide'
+                    },
+                    'isMobile': false,
+                    'title': 'Online Text To Speech | Nathan Prinsley',
+                    'description': '',
+                    'url': 'https://text2speech.prinsh.com//p/bot-menulis.html',
+                    'type': 'error',
+                    'isSingleItem': false,
+                    'isMultipleItems': false,
+                    'isError': true,
+                    'isPage': false,
+                    'isPost': false,
+                    'isHomepage': false,
+                    'isArchive': false,
+                    'isLabelSearch': false
+                }
+            }]);
+        </script>
+    </body>
 </html>
