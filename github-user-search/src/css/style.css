@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* Manage CSS animations when DOM is loading */
+.loading{
+    animation-play-state: paused !important;
+}
+
+/* Manage switch between dark and light mode */
+body{
+    --text-color: #333;
+    --bkg-color: #fff;
+}
+
+
+body.dark-theme{
+    --text-color: #eee;
+    --bkg-color: #121212;
+}
+  
+@media (prefers-color-scheme: dark) {
+    /* defaults to dark theme */
+    body{
+    --text-color: #eee;
+    --bkg-color: #121212;
+    }
+
+    body.light-theme{
+    --text-color: #333;
+    --bkg-color: #fff;
+    }
+
+}
+
+body{
+background: var(--bkg-color);
+}
+  
+h1, h2, p, label, footer a{
+color: var(--text-color);
+}
+
+/* INTERFACE'S USER */
+header{
+    text-align: center;
+    padding: 2vh 4vw;
+    font-size: 2vw;
+    margin-bottom: 5vh;
+}
+
+h1{
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: displaying 0.4s 1.6s ease-out forwards;
+}
+
+.svg-inline--fa{
+    font-size: 1.5em;
+}
+
+section{
+    width: 65%;
+    margin: 2vh auto 50vh auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form{
+    width: 65%;
+    opacity: 0;
+    transform: translateX(-500px);
+    animation: displaying 0.8s 0.6s ease-out forwards;
+}
+
+.error{
+    color: rgb(200, 0, 50);
+}
+
+input{
+    width: 100%;
+    border: 1px solid #bbb;
+    margin-top: 1vh;
+    padding: .5em;
+    border-radius: .5em;
+}
+
+#card{
+    margin-top: 10vh;
+    padding: 5vh 4vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: .3em 0 .3em 0;
+    font-size: 1em;
+    line-height: 1.5em;
+    opacity: 0;
+    animation: displaying 0.4s 0.4s ease-out forwards;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+picture{
+    margin-bottom: 5vh;
+}
+
+hr{
+    margin-bottom: 2vh;
+    border: 1px dashed white;
+}
+
+img{
+    display: block;
+    margin: -8vh auto 1vh;
+    width: 35%;
+    border-radius: 50%;
+    box-shadow: .1em .1em .4em rgba(0, 0, 0, 0.4);
+}
+
+h2{
+    text-align: center;
+    line-height: 2em;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+#card > a{
+    margin: 2em 0;
+    padding: 1em;
+    border: none;
+    border-radius: .4em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1em;
+    text-align: center;
+    letter-spacing: .06em;
+    color:#333;
+    background-color: #eee;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+
+#card > a:hover{
+    border-radius: .2em;
+    color:#eee;
+    background-color: #333;
+}
+
+#toggle-mode-display{
+    position: fixed;
+    bottom: 0.8em;
+    right: 0.8em;
+}
+
+#toogle-mode-display > button{
+    border: none;
+    box-shadow: 0.1em 0.1em 0.2em rgb(0 0 0 / 40%);
+    padding: 0.5em;
+}
+
+
+footer{
+    padding: 4vh 3vw;
+    margin-top: 10vh;
+    font-size: 0.9em;
+    text-align: center;
+    line-height: 1.8em;
+    color: #333;
+    box-shadow: -.1em 0 .8em rgba(0, 0, 0, 0.3);
+}
+
+footer a{
+    font-weight: 600;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+/* ANIMATIONS */
+@keyframes displaying{
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* MANAGE RESPONSIVE DISPLAY */
+@media screen and (min-width: 900px) {
+    
+    header{
+        font-size: 1.5vw;
+    }
+    
+}
+
+@media screen and (max-width: 640px){
+    
+    section, form{
+        width: 80%;
+    }
+
+    label{
+        font-size: 1em;
+    }
+
+    img{
+        margin: -9vh auto 1vh;
+        width: 45%;
+    }
+
+}
+
+@media screen and (max-width: 375px){
+    
+    header{
+        font-size: 3vw;
+    }
+
+    form{
+        width: 95%;
+    }
+
+    label{
+        line-height: 1.5em;
+    }
+
+    img{
+        margin: -9vh auto 1vh;
+        width: 55%;
+    }
+
+}
